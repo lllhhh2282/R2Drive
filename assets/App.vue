@@ -1698,7 +1698,7 @@ export default {
 
       // 检查是否是媒体文件
       const imageTypes = ['jpg', 'jpeg', 'png', 'gif', 'webp', 'svg', 'bmp', 'ico'];
-      const videoTypes = ['mp4', 'webm', 'ogv', 'avi', 'mov', 'wmv', 'mp3'];
+      const videoTypes = ['mp4', 'webm', 'ogv', 'avi', 'mov', 'wmv',];
       const ext = file.key?.split('.').pop()?.toLowerCase();
       const isImageFile = imageTypes.includes(ext);
       const isVideoFile = videoTypes.includes(ext);
@@ -1724,7 +1724,7 @@ export default {
     openMediaPreview(clickedFile) {
       // 确定点击文件的类型
       const imageTypes = ['jpg', 'jpeg', 'png', 'gif', 'webp', 'svg', 'bmp', 'ico'];
-      const videoTypes = ['mp4', 'webm', 'ogv', 'avi', 'mov', 'wmv', 'mp3'];
+      const videoTypes = ['mp4', 'webm', 'ogv', 'avi', 'mov', 'wmv'];
       const clickedExt = clickedFile.key?.split('.').pop()?.toLowerCase();
       const isClickedImage = imageTypes.includes(clickedExt);
       const isClickedVideo = videoTypes.includes(clickedExt);
