@@ -866,22 +866,8 @@ export default {
 
 /* 控制提示 */
 .controls-hint {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: rgba(0, 0, 0, 0.6);
-  color: white;
-  padding: 12px 20px;
-  border-radius: 25px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 14px;
-  pointer-events: auto;
-  cursor: pointer;
-  backdrop-filter: blur(10px);
-  animation: fadeInOut 2s ease-in-out infinite;
+  background: rgba(0, 0, 0, 0);
+
 }
 
 @keyframes fadeInOut {
