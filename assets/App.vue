@@ -272,7 +272,7 @@
               <input type="checkbox" :checked="isFileSelected(file.key)" @click.stop @change.stop="toggleFileSelection(file.key)">
             </div>
             <MimeIcon :content-type="file.httpMetadata?.contentType || 'application/octet-stream'" :thumbnail="file.customMetadata?.thumbnail
-              ? `/raw/_$flaredrive$/thumbnails/${file.customMetadata.thumbnail}.png`
+              ? `https://cdn.lh2282.com/_$flaredrive$/thumbnails/${file.customMetadata.thumbnail}.png`
               : null
               " />
             <div class="file-info-container">
@@ -341,7 +341,7 @@
           </button>
         </li>
         <li>
-          <a :href="`/raw/${focusedItem.key}`" target="_blank" download>
+          <a :href="`https://cdn.lh2282.com/${focusedItem.key}`" target="_blank" download>
             <span>下载</span>
           </a>
         </li>
@@ -356,7 +356,7 @@
           </button>
         </li>
         <li>
-          <button @click="copyLink(`/raw/${focusedItem.key}`)">
+          <button @click="copyLink(`https://cdn.lh2282.com/${focusedItem.key}`)">
             <span>复制链接</span>
           </button>
         </li>
@@ -1306,7 +1306,7 @@ export default {
       try {
         for (const fileKey of this.selectedFiles) {
           const link = document.createElement('a');
-          link.href = `/raw/${fileKey}`;
+          link.href = `https://cdn.lh2282.com/${fileKey}`;
           link.download = fileKey.split('/').pop();
           document.body.appendChild(link);
           link.click();
@@ -1716,7 +1716,7 @@ export default {
         this.cwd = directory;
       } else {
         // 普通非媒体文件：直接预览/下载
-        this.preview(`/raw/${file.key}`);
+        this.preview(`https://cdn.lh2282.com/${file.key}`);
       }
     },
 
@@ -1761,7 +1761,7 @@ export default {
       // 为每个媒体文件添加预览URL
       mediaList = mediaList.map(file => ({
         ...file,
-        url: `/raw/${file.key}`,
+        url: `https://cdn.lh2282.com/${file.key}`,
         name: file.key.split('/').pop()
       }));
 
