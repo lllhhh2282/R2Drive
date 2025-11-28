@@ -59,10 +59,7 @@
            @mousemove="onControlsMouseMove"
            @mouseleave="onControlsMouseLeave">
 
-        <!-- 隐藏状态提示（仅移动端） -->
-        <div v-if="isMobile && controlsAutoHide" class="controls-hint" @click="showControls">
-          
-        </div>
+        
         <!-- 移动端顶部控制栏 -->
         <div v-if="isMobile" class="mobile-top-controls" :class="{ 'auto-hide': controlsAutoHide }">
           <div class="media-info">
@@ -864,11 +861,7 @@ export default {
   pointer-events: none;
 }
 
-/* 控制提示 */
-.controls-hint {
-  background: rgba(0, 0, 0, 0);
 
-}
 
 @keyframes fadeInOut {
   0%, 100% { opacity: 0.6; }
