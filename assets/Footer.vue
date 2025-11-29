@@ -5,7 +5,7 @@
     </div>
 
     <div class="stats">
-        累计访问人数：<img src="https://count.getloli.com/@lh2282-pan" alt="访问人数计数器" />
+        累计被访问次数：<img src="https://count.getloli.com/@lh2282-pan" alt="访问人数计数器" />
     </div>
 
     <div class="project-links">
