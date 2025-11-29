@@ -67,8 +67,7 @@
           <div v-if="loginError" class="error-message">{{ loginError }}</div>
         </div>
       </div>
-    </div>
-
+    </div><
     <!-- 上传按钮 - 只有登录用户或有上传权限的游客才显示 -->
     <button v-if="canUpload" class="upload-button circle" @click="showUploadPopup = true">
       <svg t="1741764069699" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -80,7 +79,7 @@
     </button>
     <div class="app-bar">
       <a class="app-title-container" style="display: flex; align-items: center;" href="/">
-        <img src="/assets/homescreen.png" alt="FlareDrive" style="height: 24px" />
+        <img src="/assets/homescreen.png" alt="lh28Drive" style="height: 24px" />
         <h1 class="app-title" style="font-size: 20px;margin: 0 25px 0 8px; user-select: none;">FlareDrive</h1>
       </a>
 
@@ -92,7 +91,7 @@
           @focus="onSearchFocus"
           @blur="onSearchBlur"
           aria-label="Search"
-          placeholder="🍿 输入以全局搜索文件"
+          placeholder="搜索..."
           class="search-input"
           ref="searchInput"
         />
@@ -2466,8 +2465,8 @@ export default {
           window.history.pushState(null, "", url.toString());
         }
         document.title = this.cwd.replace(/.*\/(?!$)|\//g, "") === "/"
-            ? "FlareDrive-R2 - 优雅的 Cloudflare R2 网盘文件库"
-            :`${this.cwd.replace(/.*\/(?!$)|\//g, "") || "/" } - 优雅的 Cloudflare R2 网盘文件库`;
+            ? "lh28Pan - 程序鸽的神必小网盘"
+            :`${this.cwd.replace(/.*\/(?!$)|\//g, "") || "/" } - lh28Pan`;
       },
       immediate: true,
     },
